@@ -14,7 +14,7 @@ public class MyListTest {
 	}
 	
 	@Test
-	public void cangetAStringFromArray(){
+	public void canGetAStringFromArray(){
 		String expected = "Banana";
 		MyList<String> list = new MyList<String>("Banana");
 		String actual = list.get(0);
@@ -46,5 +46,29 @@ public class MyListTest {
 		MyList<Byte> list = new MyList<Byte>(bYte);
 		list.clear();
 		Assert.assertEquals(expected, list.getListSize());
+	}
+	
+	@Test
+	public void isEmptyReturnsTrueAfterClearABooleanList(){
+		Boolean bool = false;
+		MyList<Boolean> list = new MyList<Boolean>(bool);
+		list.clear();
+		Assert.assertTrue(list.isEmpty());
+	}
+	
+	@Test
+	public void containsReturnsTrueWhenListHasStringZandAskingAboutZ(){
+		String z = "z";
+		MyList<String> list = new MyList<String>(z);
+		list.contains(z);
+		Assert.assertTrue(list.contains(z));
+	}
+	
+	@Test
+	public void containsReturnsFalseWhenListHasStringAandAskingAboutZ(){
+		String a = "A";
+		String z = "z";
+		MyList<String> list = new MyList<String>(a);
+		Assert.assertFalse(list.contains(z));
 	}
 }
