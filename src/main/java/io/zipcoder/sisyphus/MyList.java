@@ -1,4 +1,4 @@
-package io.zipcoder.list;
+package io.zipcoder.sisyphus;
 
 public class MyList<T> {
 	private int listSize;

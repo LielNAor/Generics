@@ -1,7 +1,9 @@
-package io.zipcoder.list;
+package io.zipcoder.sisyphus;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import io.zipcoder.sisyphus.MyList;
 
 public class MyListTest {
 	
