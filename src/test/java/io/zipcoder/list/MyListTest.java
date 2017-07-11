@@ -60,7 +60,6 @@ public class MyListTest {
 	public void containsReturnsTrueWhenListHasStringZandAskingAboutZ(){
 		String z = "z";
 		MyList<String> list = new MyList<String>(z);
-		list.contains(z);
 		Assert.assertTrue(list.contains(z));
 	}
 	
