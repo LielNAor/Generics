@@ -60,8 +60,8 @@ public class MyListTest {
 	
 	@Test
 	public void containsReturnsTrueWhenListHasStringZandAskingAboutZ(){
-		String z = "z";
-		MyList<String> list = new MyList<String>(z);
+		Character z = 'z';
+		MyList<Character> list = new MyList<Character>(z);
 		Assert.assertTrue(list.contains(z));
 	}
 	
